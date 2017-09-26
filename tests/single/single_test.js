@@ -11,7 +11,7 @@ module.exports = {
       .waitForElementVisible('body', 1000)
       .setValue('input[type=text]', 'BrowserStack\n')
       .pause(1000)
-      .assert.title('BrowserStack - Google Search')
+      .assert.title('BrowserStack - Google Search this will fail')
       .end();
   }
 };
