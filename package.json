@@ -1,5 +1,5 @@
 {
-  "name": "nightwatch-browserstack",
+  "name": "nightwatch-browserstack-example",
   "version": "0.1.0",
   "readme": "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for Nightwatch and BrowserStack Automate",
@@ -19,5 +19,8 @@
     "browserstack-local": "^1.0.0",
     "nightwatch": "^0.8.18"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nightwatch-browserstack": "^1.1.0"
+  }
 }
