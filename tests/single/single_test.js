@@ -1,9 +1,9 @@
 module.exports = {
   beforeEach: function (browser, done) {
-    return require('nightwatch-browserstack').storeSessionId(browser, done)
+    return require('../../scripts/browserstack-api').storeSessionId(browser, done)
   },
   afterEach: function (browser, done) {
-    return require('nightwatch-browserstack').updateStatus(browser, done)
+    return require('../../scripts/browserstack-api').updateStatus(browser, done)
   },
   'Google\'s Search Functionality' : function (browser) {
     browser
