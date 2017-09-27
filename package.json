@@ -4,7 +4,7 @@
   "readme": "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for Nightwatch and BrowserStack Automate",
   "scripts": {
-    "test": "npm run single && npm run local && npm run parallel",
+    "start": "webpack --config conf/webpack.conf.js && webpack-dev-server --config conf/webpack.conf.js",
     "single": "./node_modules/.bin/nightwatch -c conf/single.conf.js",
     "local": "node scripts/local.runner.js -c conf/local.conf.js",
     "parallel": "./node_modules/.bin/nightwatch -c conf/parallel.conf.js -e chrome,firefox,safari,ie",
@@ -21,6 +21,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "nightwatch-browserstack": "^1.1.0"
+    "html-webpack-plugin": "^2.30.1",
+    "nightwatch-browserstack": "^1.1.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
   }
 }

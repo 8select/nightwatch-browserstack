@@ -33,6 +33,10 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
+      - run:
+          name: webpack dev server
+          command: npm start
+          background: true  
       # run tests!
       - run: npm run single
 

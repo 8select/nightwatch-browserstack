@@ -1,7 +1,5 @@
 module.exports = {
   beforeEach: function (browser, done) {
-    console.log('FUCK IT')
-    console.log(browser)
     return require('nightwatch-browserstack').storeSessionId(browser, done)
   },
   afterEach: function (browser, done) {
